@@ -14,7 +14,7 @@ class FirstClass{
     void setName(string str){ //set function to set our variable name
       name = str;
     }
-    string getName(){ //get function to get our variable name
+    string getName(){ //get function to get  our variable name
       return name;
     }
 };
