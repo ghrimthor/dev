@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int printSomething(){
-  cout << "Hello World" << endl;
-}
+void printSomething();
 
 int main() {
   /* code */
   printSomething();
 
+}
+
+void printSomething(){
+  cout << "Hello World" << endl;
 }
