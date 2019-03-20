@@ -3,17 +3,28 @@
 
 using namespace std;
 
-int main() {
+int main(){
 
-  int x = 1;
+  int age = 21;
 
-  // advantage: will at least run one time
+  switch(age){
 
-  do{
-    cout << x << endl;
-    x++;
+    case 16:
+      cout << "Hey you can drive now!" << endl;
+    break;
+
+    case 18:
+      cout << "You are 18" << endl;
+    break;
+
+    case 21:
+      cout << "You are 21" << endl;
+    break;
+
+    default:
+      cout << "we don't know your age" << endl;
+
   }
-  while(x<10);
 
 
 }
