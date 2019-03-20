@@ -1,27 +1,19 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
 
-  int age;
-  int ageTotal = 0;
-  int numberOfPeopleEntered = 0;
+  float a;
+  float p = 10000;
+  float r = .01;
 
-  cout << "Enter first persons age or -1 to quit" << endl;
-  cin >> age;
-
-  while(age != -1) {
-    ageTotal = ageTotal + age;
-    numberOfPeopleEntered++;
-
-    cout << "Enter next persons age or -1 to quit" << endl;
-    cin >> age;
+  for(int day = 1; day <= 20; day++){
+    a = p * pow(1+r, day);
+    cout << day << "----" << a << endl;
   }
 
-  cout << "Number of people entered: " << numberOfPeopleEntered << endl;
-  cout << "Average age:" << ageTotal/numberOfPeopleEntered << endl;
 
-  return 0;
 
 }
