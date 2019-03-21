@@ -1,17 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int factorialFinder(int x){
-  if(x == 1){ //base case , break, ending point essential
-    return 1;
-  }
-  else{
-    return x*factorialFinder(x-1); //recursion (use of factorialFinder in factorialFinder)
+void printArray(int theArray[],int sizeOfArray){ //argument array name[]
+  for (int i = 0; i < sizeOfArray; i++){
+    cout << theArray[i] << endl;
   }
 }
 
 int main(){
-
-    cout << factorialFinder(5) << endl;
-
+//------------------------------------------------------------------------------
+    // int array[9];
+    // int sum = 0;
+    //
+    // cout << "Element - Value" << endl;
+    //
+    // for(int i=0; i<9 ; i++){
+    //   array[i] = 99;
+    //   cout << i << " ------ " << array[i] << endl;
+    //   sum += array[i]; // sum = sum + array[i]
+    // }
+    // cout << sum << endl;
+//------------------------------------------------------------------------------
+//with function printArray
+  int otherArray[3]={2,4,5};
+  printArray(otherArray, (sizeof(otherArray)/sizeof(*otherArray)));
 }
