@@ -1,12 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int tuna = 69; //global variable
+//function
+void printNumber(int x){
+  cout << "I am printing an integer" << x << endl;
+}
+
+//function overloading
+void printNumber(float x){
+  cout << "I am printing a float" << x << endl;
+}
 
 int main(){
 
-    int tuna = 20; //local variable
-    cout << ::tuna << endl; //use of :: scope resolution operator to access global variable. Usually for different datatype for same name
+      int a = 54;
+      float b = 32.987465;
+
+      printNumber(a);
+      printNumber(b); // I can use the same function for different datatype
 
   }
 
