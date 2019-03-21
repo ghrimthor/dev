@@ -1,28 +1,12 @@
 #include <iostream>
-#include <cmath>
-
 using namespace std;
+
+int tuna = 69; //global variable
 
 int main(){
 
-  int age = 21;
-
-  switch(age){
-
-    case 16:
-      cout << "Hey you can drive now!" << endl;
-    break;
-
-    case 18:
-      cout << "You are 18" << endl;
-    break;
-
-    case 21:
-      cout << "You are 21" << endl;
-    break;
-
-    default:
-      cout << "we don't know your age" << endl;
+    int tuna = 20; //local variable
+    cout << ::tuna << endl; //use of :: scope resolution operator to access global variable. Usually for different datatype for same name
 
   }
 
