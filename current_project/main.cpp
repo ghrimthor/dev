@@ -1,25 +1,22 @@
 #include <iostream>
 using namespace std;
 
-//reference: useful when a lot a value of variable or variable. 
-
-void passByValue(int x){
-  x = 99;
-}
-
-void passByReference(int *x){
-  *x= 66;
-}
+//sizeof
 
 
 int main(){
-  int betty = 13;
-  int sandy = 13;
 
-  passByValue(betty);
-  passByReference(&sandy);
+  char c;
+  cout <<  sizeof(c) << endl;
 
-  cout << "Betty is now " << betty << endl;
-  cout << "Sandy is now " << sandy << endl;
+  int c;
+  cout <<  sizeof(c) << endl;
 
+  double c;
+  cout << sizeof(c) << endl;
+
+  double arr[10];
+  cout << sizeof(arr) << endl;
+
+  cout << sizeof(arr) / sizeof(arr[0]) << endl; //number of elements in       array arr
 }
