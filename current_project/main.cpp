@@ -1,13 +1,25 @@
 #include <iostream>
 using namespace std;
 
+//reference: useful when a lot a value of variable or variable. 
+
+void passByValue(int x){
+  x = 99;
+}
+
+void passByReference(int *x){
+  *x= 66;
+}
+
 
 int main(){
-  int fish = 5;
-  cout << &fish << endl; //access memory adress of fish
+  int betty = 13;
+  int sandy = 13;
 
-  int *fishPointer;
-  fishPointer = &fish;
+  passByValue(betty);
+  passByReference(&sandy);
 
-  cout << fishPointer << endl;
+  cout << "Betty is now " << betty << endl;
+  cout << "Sandy is now " << sandy << endl;
+
 }
