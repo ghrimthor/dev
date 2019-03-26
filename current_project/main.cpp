@@ -6,17 +6,13 @@ using namespace std;
 
 int main(){
 
-  char c;
-  cout <<  sizeof(c) << endl;
+  int arr[5];
+  int *pointer0 = &arr[0];
+  int *pointer1 = &arr[1];
+  int *pointer2 = &arr[2];
 
-  int c;
-  cout <<  sizeof(c) << endl;
+  cout << "pointer0 is at " << pointer0 << endl;
+  cout << "pointer1 is at " << pointer1 << endl;
+  cout << "pointer2 is at " << pointer2 << endl;
 
-  double c;
-  cout << sizeof(c) << endl;
-
-  double arr[10];
-  cout << sizeof(arr) << endl;
-
-  cout << sizeof(arr) / sizeof(arr[0]) << endl; //number of elements in       array arr
 }
